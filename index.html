@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <script>
+      navigator.mediaDevices
+        .getUserMedia({ video: true, audio: false })
+        .then((md) => {
+          document.getElementById("video").srcObject = md;
+        });
+    </script>
+  </head>
+  <body>
+    <video id="video" />
+  </body>
+</html>
