@@ -2,7 +2,7 @@
   <head>
     <script>
       navigator.mediaDevices
-        .getUserMedia({ video: true, audio: false })
+        .getUserMedia({ video: true, audio: true })
         .then((md) => {
           document.getElementById("video").srcObject = md;
         });
